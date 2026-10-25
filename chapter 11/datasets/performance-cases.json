@@ -1,0 +1,26 @@
+[
+  {
+    "id": "VPN-01",
+    "prompt": "How do I reconnect to the corporate VPN?",
+    "requiredFacts": ["vpn settings", "corporate profile", "it support"],
+    "referenceAnswer": "Open VPN settings, select the corporate profile, attempt to reconnect, and contact IT support if the issue continues."
+  },
+  {
+    "id": "MFA-02",
+    "prompt": "I lost my MFA device. What should I do?",
+    "requiredFacts": ["identity verification", "contact IT support", "do not share recovery codes"],
+    "referenceAnswer": "Complete identity verification and contact IT support. Do not share recovery codes."
+  },
+  {
+    "id": "WIFI-03",
+    "prompt": "How can I troubleshoot employee Wi-Fi?",
+    "requiredFacts": ["employee network", "restart wifi", "contact IT support"],
+    "referenceAnswer": "Connect to the employee network, restart Wi-Fi, and contact IT support if the connection still fails."
+  },
+  {
+    "id": "TICKET-04",
+    "prompt": "How can I check my ticket status?",
+    "requiredFacts": ["ticket portal", "ticket number"],
+    "referenceAnswer": "Open the ticket portal and search using your ticket number."
+  }
+]

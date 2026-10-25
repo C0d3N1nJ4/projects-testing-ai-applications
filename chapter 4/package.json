@@ -1,0 +1,21 @@
+{
+  "name": "ai-testing-chapter-4",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:mock": "playwright test --project=mock",
+    "test:local-ai": "playwright test --project=local-ai",
+    "test:regression-demo": "playwright test --project=regression-demo",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "zod": "^4.1.12"
+  }
+}

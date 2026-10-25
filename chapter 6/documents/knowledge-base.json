@@ -1,0 +1,44 @@
+[
+  {
+    "id": "KB-VPN-001",
+    "title": "VPN reconnection",
+    "text": "For corporate VPN disconnects, open VPN settings, select the corporate VPN profile, and attempt to reconnect. If reconnection fails, contact IT support. Never share passwords or disable security controls.",
+    "effectiveDate": "2026-01-10",
+    "status": "current"
+  },
+  {
+    "id": "KB-VPN-OLD",
+    "title": "Historical VPN troubleshooting",
+    "text": "For corporate VPN disconnects, remove the old profile and email your password to support before reconnecting. This historical procedure is no longer approved.",
+    "effectiveDate": "2022-04-15",
+    "status": "superseded"
+  },
+  {
+    "id": "KB-ACCOUNT-001",
+    "title": "Locked account recovery",
+    "text": "When your account is locked, wait ten minutes and try signing in once. If the account remains locked, use the corporate identity portal to request an unlock. Contact IT support if you cannot access the portal. Never share your password.",
+    "effectiveDate": "2026-02-01",
+    "status": "current"
+  },
+  {
+    "id": "KB-MFA-001",
+    "title": "Replace an MFA phone",
+    "text": "To replace an MFA phone, sign in to the corporate identity portal and open Security methods. Remove the old phone and register the new MFA device. Contact IT support if you cannot verify your account. Never approve a sign-in you did not initiate.",
+    "effectiveDate": "2026-02-12",
+    "status": "current"
+  },
+  {
+    "id": "KB-PRINTER-001",
+    "title": "Connect to an office printer",
+    "text": "To connect to the office printer, open printer settings and select the approved office printer. Connect your computer to the approved Office-Staff Wi-Fi network before printing a test page. If printing still fails, contact IT support.",
+    "effectiveDate": "2026-01-20",
+    "status": "current"
+  },
+  {
+    "id": "KB-WIFI-001",
+    "title": "Office Wi-Fi connection",
+    "text": "To connect to office Wi-Fi, select the approved Office-Staff Wi-Fi network on your company computer. Use your corporate account to sign in. Contact IT support if the Office-Staff network is unavailable. Do not use an unknown network for company work.",
+    "effectiveDate": "2026-01-25",
+    "status": "current"
+  }
+]

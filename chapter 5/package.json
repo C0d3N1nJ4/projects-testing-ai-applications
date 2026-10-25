@@ -1,0 +1,15 @@
+{
+  "name": "ai-testing-chapter-5",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:chapter5": "playwright test --project=chapter5",
+    "test:chapter5:failure": "playwright test --project=chapter5-failure"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "typescript": "^5.9.3"
+  }
+}

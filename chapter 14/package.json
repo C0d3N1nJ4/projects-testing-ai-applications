@@ -1,0 +1,19 @@
+{
+  "name": "ai-quality-pipeline-ch14",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test --project=release-pipeline",
+    "test:learning": "playwright test --config=playwright.learning.config.ts",
+    "gate:healthy": "tsx src/gate-cli.ts --defect none",
+    "gate:regression": "tsx src/gate-cli.ts --defect all",
+    "report": "playwright show-report reports/html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

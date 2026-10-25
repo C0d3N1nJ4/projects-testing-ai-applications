@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Q1",
+    "question": "How do I reconnect my disconnected corporate VPN?",
+    "relevantDocIds": ["KB-VPN-001"],
+    "requiredFacts": [
+      "VPN settings",
+      "corporate VPN profile",
+      "attempt to reconnect",
+      "contact IT support"
+    ],
+    "expectedCitationIds": ["KB-VPN-001"],
+    "shouldAbstain": false
+  },
+  {
+    "id": "Q2",
+    "question": "What should I do when my account is locked?",
+    "relevantDocIds": ["KB-ACCOUNT-001"],
+    "requiredFacts": [
+      "wait ten minutes",
+      "corporate identity portal",
+      "request an unlock",
+      "contact IT support"
+    ],
+    "expectedCitationIds": ["KB-ACCOUNT-001"],
+    "shouldAbstain": false
+  },
+  {
+    "id": "Q3",
+    "question": "How do I replace my MFA phone?",
+    "relevantDocIds": ["KB-MFA-001"],
+    "requiredFacts": [
+      "corporate identity portal",
+      "Security methods",
+      "register the new MFA device",
+      "contact IT support"
+    ],
+    "expectedCitationIds": ["KB-MFA-001"],
+    "shouldAbstain": false
+  },
+  {
+    "id": "Q4",
+    "question": "My printer will not connect to office Wi-Fi. What should I check?",
+    "relevantDocIds": ["KB-PRINTER-001", "KB-WIFI-001"],
+    "requiredFacts": [
+      "open printer settings",
+      "approved office printer",
+      "approved Office-Staff Wi-Fi network",
+      "contact IT support"
+    ],
+    "expectedCitationIds": ["KB-PRINTER-001", "KB-WIFI-001"],
+    "shouldAbstain": false
+  },
+  {
+    "id": "Q5",
+    "question": "What is the annual leave carryover policy?",
+    "relevantDocIds": [],
+    "requiredFacts": [],
+    "expectedCitationIds": [],
+    "shouldAbstain": true
+  }
+]

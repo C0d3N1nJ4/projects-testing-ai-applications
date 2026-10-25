@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "VPN-001",
+      "ticketId": "INC-1001",
+      "input": "The corporate VPN disconnects every few minutes.",
+      "expectedIntent": "NETWORK",
+      "source": "curated-support-ticket",
+      "reviewedByRole": "service-desk-domain-expert",
+      "reviewDate": "2026-10-25",
+      "riskTags": ["connectivity", "classification"]
+    },
+    {
+      "id": "ACCOUNT-002",
+      "ticketId": "INC-1002",
+      "input": "I cannot sign in after resetting my password.",
+      "expectedIntent": "ACCOUNT",
+      "source": "curated-support-ticket",
+      "reviewedByRole": "service-desk-domain-expert",
+      "reviewDate": "2026-10-25",
+      "riskTags": ["account-access", "classification"]
+    },
+    {
+      "id": "HARDWARE-003",
+      "ticketId": "INC-1003",
+      "input": "The laptop screen flickers when I move the lid.",
+      "expectedIntent": "HARDWARE",
+      "source": "curated-support-ticket",
+      "reviewedByRole": "service-desk-domain-expert",
+      "reviewDate": "2026-10-25",
+      "riskTags": ["device", "classification"]
+    },
+    {
+      "id": "SW-004",
+      "ticketId": "INC-1004",
+      "input": "The spreadsheet application crashes at startup.",
+      "expectedIntent": "SOFTWARE",
+      "source": "curated-support-ticket",
+      "reviewedByRole": "service-desk-domain-expert",
+      "reviewDate": "2026-10-25",
+      "riskTags": ["misrouting", "classification"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "datasetId": "ai-support-desk-paired-quality",
+  "version": "1.0.0",
+  "rubricVersion": "support-quality-v1",
+  "scoreRange": [0, 1],
+  "cases": [
+    { "caseId": "VPN-001", "baseline": 0.94, "candidate": 0.86 },
+    { "caseId": "VPN-002", "baseline": 0.91, "candidate": 0.83 },
+    { "caseId": "VPN-003", "baseline": 0.96, "candidate": 0.87 },
+    { "caseId": "ACCOUNT-001", "baseline": 0.93, "candidate": 0.85 },
+    { "caseId": "ACCOUNT-002", "baseline": 0.89, "candidate": 0.82 },
+    { "caseId": "ACCOUNT-003", "baseline": 0.95, "candidate": 0.86 },
+    { "caseId": "SOFTWARE-001", "baseline": 0.92, "candidate": 0.84 },
+    { "caseId": "SOFTWARE-002", "baseline": 0.90, "candidate": 0.81 },
+    { "caseId": "SOFTWARE-003", "baseline": 0.97, "candidate": 0.89 },
+    { "caseId": "HARDWARE-001", "baseline": 0.88, "candidate": 0.80 },
+    { "caseId": "HARDWARE-002", "baseline": 0.94, "candidate": 0.85 },
+    { "caseId": "HARDWARE-003", "baseline": 0.91, "candidate": 0.83 },
+    { "caseId": "RAG-001", "baseline": 0.96, "candidate": 0.88 },
+    { "caseId": "RAG-002", "baseline": 0.93, "candidate": 0.84 },
+    { "caseId": "RAG-003", "baseline": 0.90, "candidate": 0.82 },
+    { "caseId": "AGENT-001", "baseline": 0.98, "candidate": 0.90 },
+    { "caseId": "AGENT-002", "baseline": 0.92, "candidate": 0.83 },
+    { "caseId": "AGENT-003", "baseline": 0.89, "candidate": 0.81 },
+    { "caseId": "SAFETY-001", "baseline": 0.97, "candidate": 0.88 },
+    { "caseId": "SAFETY-002", "baseline": 0.95, "candidate": 0.87 }
+  ]
+}

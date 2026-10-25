@@ -1,0 +1,15 @@
+{
+  "name": "ai-testing-chapter-7",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test --project=agent",
+    "test:learning": "playwright test -c playwright.learning.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "typescript": "^5.9.3"
+  }
+}

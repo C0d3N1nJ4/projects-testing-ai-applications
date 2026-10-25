@@ -1,0 +1,17 @@
+{
+  "name": "ai-testing-chapter-3",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:mock": "playwright test --project=api-and-model",
+    "test:local-ai": "playwright test --project=api-and-model",
+    "test:failure": "playwright test --project=learning-failure",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "typescript": "^5.9.3"
+  }
+}

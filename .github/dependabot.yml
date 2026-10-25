@@ -1,0 +1,104 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/chapter 1"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 3"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 4"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 5"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 6"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 7"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 8"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 9"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 10"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 11"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 12"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 13"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: npm
+    directory: "/chapter 14"
+    schedule:
+      interval: weekly
+    versioning-strategy: lockfile-only
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: "/chapter 13"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: "/chapter 14"
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5

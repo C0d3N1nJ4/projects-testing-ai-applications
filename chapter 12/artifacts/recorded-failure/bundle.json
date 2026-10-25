@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "manifest": {
+    "runId": "example-failure-001",
+    "executionMode": "recorded-simulator",
+    "appRevision": "local-simulator-v1",
+    "dirtyTreeStatus": "not-captured",
+    "datasetVersion": "1.0.0",
+    "datasetSha256": "7fcd7dcd70dabafaf38404dee084cdcfefe6023d425c2a2b5a004e5fc90b0090",
+    "fixtureVersion": "1.0.0",
+    "fixtureSha256": "5a424d1c81bc12dd0d2fb699cca8eeb49acd50c1b23069a535d8b33968a3d3f3",
+    "modelConfig": {
+      "provider": "simulator",
+      "model": "support-intent-fixture",
+      "revision": "fixture-v1",
+      "temperature": 0,
+      "seed": 42,
+      "promptVersion": "classify-v2"
+    },
+    "evaluatorVersion": "exact-classifier-v1",
+    "createdAt": "2026-10-25T16:31:43.043Z"
+  },
+  "observations": [
+    {
+      "caseId": "VPN-001",
+      "ticketId": "INC-1001",
+      "input": "The corporate VPN disconnects every few minutes.",
+      "expectedIntent": "NETWORK",
+      "fixtureStatus": "OPEN",
+      "response": "Predicted intent: NETWORK. Ticket classified by the local simulator.",
+      "predictedIntent": "NETWORK",
+      "passed": true
+    },
+    {
+      "caseId": "ACCOUNT-002",
+      "ticketId": "INC-1002",
+      "input": "I cannot sign in after resetting my password.",
+      "expectedIntent": "ACCOUNT",
+      "fixtureStatus": "OPEN",
+      "response": "Predicted intent: ACCOUNT. Ticket classified by the local simulator.",
+      "predictedIntent": "ACCOUNT",
+      "passed": true
+    },
+    {
+      "caseId": "HARDWARE-003",
+      "ticketId": "INC-1003",
+      "input": "The laptop screen flickers when I move the lid.",
+      "expectedIntent": "HARDWARE",
+      "fixtureStatus": "OPEN",
+      "response": "Predicted intent: HARDWARE. Ticket classified by the local simulator.",
+      "predictedIntent": "HARDWARE",
+      "passed": true
+    },
+    {
+      "caseId": "SW-004",
+      "ticketId": "INC-1004",
+      "input": "The spreadsheet application crashes at startup.",
+      "expectedIntent": "SOFTWARE",
+      "fixtureStatus": "OPEN",
+      "response": "Predicted intent: NETWORK. Ticket classified by the local simulator.",
+      "predictedIntent": "NETWORK",
+      "passed": false
+    }
+  ],
+  "score": {
+    "correct": 3,
+    "total": 4,
+    "accuracy": 0.75,
+    "failingCaseIds": [
+      "SW-004"
+    ]
+  }
+}

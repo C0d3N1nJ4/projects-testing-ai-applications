@@ -1,0 +1,19 @@
+{
+  "name": "ai-quality-gates-ch13",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test --project=quality",
+    "test:learning": "playwright test --config=playwright.learning.config.ts --project=quality --grep @learning",
+    "gate": "tsx src/gate-cli.ts --profile baseline",
+    "gate:regression": "tsx src/gate-cli.ts --profile regression",
+    "test:report": "playwright show-report reports/html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

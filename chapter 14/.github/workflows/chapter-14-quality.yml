@@ -1,0 +1,57 @@
+name: Chapter 14 production quality pipeline
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      defect:
+        description: 'Select the simulator profile for the release gate'
+        required: true
+        type: choice
+        options:
+          - none
+          - all
+        default: none
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release-pipeline:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'chapter 14'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 'chapter 14/package-lock.json'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Run healthy pipeline tests
+        run: npm test
+      - name: Generate healthy release decision
+        if: github.event_name != 'workflow_dispatch' || inputs.defect == 'none'
+        run: npm run gate:healthy
+      - name: Block the injected defect campaign
+        if: github.event_name == 'workflow_dispatch' && inputs.defect == 'all'
+        run: npm run gate:regression
+      - name: Upload reports and release evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter-14-release-evidence-${{ github.run_id }}
+          path: |
+            chapter 14/artifacts/
+            chapter 14/reports/
+          if-no-files-found: warn
+          retention-days: 14

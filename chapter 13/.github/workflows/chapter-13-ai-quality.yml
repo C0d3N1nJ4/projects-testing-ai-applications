@@ -1,0 +1,58 @@
+name: Chapter 13 AI quality checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      demonstrate_regression:
+        description: 'Run the deliberate regression profile to demonstrate a blocked gate'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-gate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'chapter 13'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: 'chapter 13/package-lock.json'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Run deterministic quality-gate tests
+        run: npm test
+      - name: Evaluate baseline profile
+        if: github.event_name != 'workflow_dispatch' || inputs.demonstrate_regression != true
+        run: npm run gate
+      - name: Demonstrate a blocked regression
+        if: github.event_name == 'workflow_dispatch' && inputs.demonstrate_regression == true
+        run: npm run gate:regression
+      - name: Upload test and gate evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: chapter-13-quality-evidence-${{ github.run_id }}
+          path: |
+            chapter 13/artifacts/
+            chapter 13/reports/
+          if-no-files-found: warn
+          retention-days: 30

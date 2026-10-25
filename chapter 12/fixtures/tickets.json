@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "tickets": [
+    {
+      "ticketId": "INC-1001",
+      "status": "OPEN",
+      "tenant": "north",
+      "permissions": ["support_agent"]
+    },
+    {
+      "ticketId": "INC-1002",
+      "status": "OPEN",
+      "tenant": "north",
+      "permissions": ["support_agent"]
+    },
+    {
+      "ticketId": "INC-1003",
+      "status": "OPEN",
+      "tenant": "north",
+      "permissions": ["support_agent"]
+    },
+    {
+      "ticketId": "INC-1004",
+      "status": "OPEN",
+      "tenant": "north",
+      "permissions": ["support_agent"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ai-testing-chapter-11",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test --project=performance",
+    "test:report": "playwright show-report reports/html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^22.19.1",
+    "typescript": "^5.9.3"
+  }
+}
